@@ -52,9 +52,6 @@
 ; zenburn is not handling correctly colors in lucid
 ; (setq ansi-term-color-vector [unspecified "#3f3f3f" "#cc9393" "#7f9f7f" "#f0dfaf" "#8cd0d3" "#dc8cc3" "#93e0e3" "#dcdccc"])
 
-; I don't like zenburn region color
-(set-face-background 'region "#656555")
-
 ;; Some custom configuration to ediff
 (defvar my-ediff-bwin-config nil "Window configuration before ediff.")
 (defcustom my-ediff-bwin-reg ?b
