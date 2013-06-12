@@ -9,6 +9,7 @@
 (setq my-custom-dir (expand-file-name "custom" prelude-personal-dir))
 
 (add-to-list 'load-path my-lib-dir)
+(add-to-list 'load-path my-custom-dir)
 
 (mapc 'load (directory-files my-custom-dir 't "^[^#].*el$"))
 

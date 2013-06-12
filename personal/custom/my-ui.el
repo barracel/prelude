@@ -2,6 +2,7 @@
 (set-face-background 'region "#656555")
 
 (desktop-save-mode 1)
+(scroll-bar-mode -1)
 
 ; zenburn is not handling correctly colors in my lucid's emacs
 ( if (string-equal (shell-command-to-string "lsb_release -cs") "lucid\n")
