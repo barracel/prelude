@@ -1,9 +1,5 @@
-; projectile settings
-(setq projectile-show-paths-function 'projectile-hashify-with-relative-paths)
-
 ; extra packages
-(prelude-ensure-module-deps '(elpy))
-
+(prelude-ensure-module-deps '(elpy edit-server w3m))
 
 (setq my-lib-dir (expand-file-name "lib" prelude-personal-dir))
 (setq my-custom-dir (expand-file-name "custom" prelude-personal-dir))

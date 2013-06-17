@@ -58,3 +58,12 @@ of windows in the frame simply by calling this command again."
       (message "Killed %i buffer(s)." count ))))
 
 (provide 'my-funcs)
+
+(defun my-shell-region-and-insert-output (start end)
+  "execute region and insert results into the next line"
+  (interactive "r")
+  (save-excursion
+    (end-of-line)
+    (insert 
+     (format "\n%s" 
+             (shell-command-to-string (buffer-substring-no-properties start end))))))
