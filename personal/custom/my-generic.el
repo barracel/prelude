@@ -11,4 +11,6 @@
 (global-set-key (kbd "<f1>") 'help-command)
 (global-set-key (kbd "M-h") 'kill-region-or-backward-word)
 
-(global-set-key "\C-x\C-m" 'execute-extended-command)
+;; Setup alternative keybindings for extended-command
+(global-set-key "\C-x\C-m" 'smex)
+(key-chord-define-global "kk" 'smex)
