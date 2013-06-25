@@ -7,5 +7,3 @@
 (defun projectile-project-root ()
   (if (boundp 'my-projectile-project-root)
       my-projectile-project-root
-      (projectile-project-root)))
-
