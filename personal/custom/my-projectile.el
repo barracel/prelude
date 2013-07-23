@@ -12,3 +12,10 @@
 (ad-activate 'projectile-project-root)
 ; still not working so deactivate it
 (ad-deactivate 'projectile-project-root )
+
+(defun my-projectile-compile-tags ()
+  "compile etags for the current project"
+  (interactive)
+  (cd (projectile-project-root))
+  ;; no sure why etags changes site by sete
+  (compile "find . -regex  \".*\\\.\\\(py\\\|php\\\)\" -print | etags -L - ;sed -i 's@sete@site@g' TAGS "))

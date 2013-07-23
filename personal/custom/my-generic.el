@@ -14,3 +14,5 @@
 ;; Setup alternative keybindings for extended-command
 (global-set-key "\C-x\C-m" 'smex)
 (key-chord-define-global "kk" 'smex)
+
+(global-set-key (kbd "C-x M-w") 'my-wrap-text)

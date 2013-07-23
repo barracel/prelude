@@ -64,6 +64,16 @@ of windows in the frame simply by calling this command again."
   (interactive "r")
   (save-excursion
     (end-of-line)
-    (insert 
-     (format "\n%s" 
+    (insert
+     (format "\n%s"
              (shell-command-to-string (buffer-substring-no-properties start end))))))
+
+(defun my-wrap-text (b e txt)
+  "simple wrapper"
+  (interactive "r\nMEnter text to wrap with: ")
+  (save-restriction
+    (narrow-to-region b e)
+    (goto-char (point-min))
+    (insert txt)
+    (goto-char (point-max))
+    (insert txt)))
