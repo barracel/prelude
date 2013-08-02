@@ -1,5 +1,11 @@
 (require 'my-funcs)
 
+;; Global minor modes
+
+(add-hook 'prog-mode-hook #'highlight-symbol-mode)
+
+;; Global keybindings
+
 (global-set-key [home] 'my-smart-beginning-of-line)
 (global-set-key "\C-a" 'my-smart-beginning-of-line)
 (global-set-key "\C-w" 'my-unix-werase-or-kill)
