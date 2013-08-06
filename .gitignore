@@ -21,4 +21,6 @@ session*
 .emacs.desktop
 .emacs.desktop.lock
 ac-comphist.dat
-
+TAGS
+abbrev_defs
+tramp
