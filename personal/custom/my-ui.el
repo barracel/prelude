@@ -11,9 +11,16 @@
       (set-face-background 'isearch zenburn-fg)
       (set-face-foreground 'isearch zenburn-bg)
       (set-face-background 'lazy-highlight zenburn-fg-1)
-)
 
-(face font-lock-warning-face)
+      (set-face-attribute  'mode-line
+                           nil
+                           :background zenburn-bg+1
+                           :box '(:line-width 1 :style released-button))
+      (set-face-attribute  'mode-line-inactive
+                           nil
+                           :background zenburn-bg
+                           :box '(:line-width 1 :style released-button))
+))
 
 
 
